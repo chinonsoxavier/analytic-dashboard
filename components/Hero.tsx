@@ -15,7 +15,6 @@ import Image from "next/image";
 import HeroBg from ".././utils/images/hero-bg.png";
 import HeroBgBackground from ".././utils/images/hero-bg-background.png";
 import {useState} from 'react'
-import ButtonWidget from "@/widgets/ButtonWidget";
 const Hero = () => {
 
   const [hoveredBar,setHoveredBar]=useState(null);
