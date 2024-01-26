@@ -1,0 +1,211 @@
+@font-face {
+    font-family: "poppins";
+    src: url("./../utils//poppins/Poppins-Regular.otf");
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: "poppins";
+    src: url("./../utils/poppins/Poppins-Black.otf");
+    font-weight: 900;
+}
+@font-face {
+    font-family: "poppins";
+    src: url("./../utils/poppins/Poppins-BlackItalic.otf");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url("./../utils/poppins/Poppins-ExtraBold.otf");
+    font-weight: 800;
+}
+@font-face {
+    font-family: "poppins";
+    src: url("./../utils/poppins/Poppins-ExtraBoldItalic.otf");
+    font-weight: 800;
+        font-style: italic;
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url("./../utils/poppins/Poppins-Bold.otf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "poppins";
+    src: url("./../utils/poppins/Poppins-BoldItalic.otf");
+    font-weight: 700;
+        font-style: italic;
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url("./../utils/poppins/Poppins-SemiBold.otf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "poppins";
+    src: url("./../utils/poppins/Poppins-SemiBoldItalic.otf");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url("./../utils//poppins/Poppins-Medium.otf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "poppins";
+    src: url("./../utils//poppins/Poppins-MediumItalic.otf");
+    font-weight: 500;
+        font-style: italic;
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url("./../utils/poppins/Poppins-Light.otf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "poppins";
+    src: url("./../utils/poppins/Poppins-LightItalic.otf");
+    font-weight: 300;
+        font-style: italic;
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url("./../utils/poppins/Poppins-ExtraLight.otf");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "poppins";
+    src: url("./../utils/poppins/Poppins-ExtraLightItalic.otf");
+    font-weight: 200;
+        font-style: italic;
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url("./../utils/poppins/Poppins-Thin.otf");
+    font-weight: 100;
+}
+@font-face {
+    font-family: "poppins";
+    src: url("./../utils/poppins/Poppins-ThinItalic.otf");
+    font-weight: 100;
+        font-style: italic;
+}
+@font-face {
+    font-family: "poppins";
+    src: url("./../utils/poppins/Poppins-Italic.otf");
+    font-weight: normal;
+        font-style: italic;
+}
+@font-face {
+    font-family: "inter";
+    src: url("./../utils/Inter/static/Inter-Light.ttf");
+    font-weight: normal;
+        font-style: normal;
+}
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("./../utils/Plus_Jakarta_Sans/static/PlusJakartaSans-Light.ttf");
+    font-weight: 200;
+        font-style: normal;
+}
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("./../utils/Plus_Jakarta_Sans/static/PlusJakartaSans-LightItalic.ttf");
+    font-weight: 200;
+        font-style: italic;
+}
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("./../utils/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf");
+    font-weight: 400;
+        font-style: normal;
+}
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("./../utils/Plus_Jakarta_Sans/static/PlusJakartaSans-Italic.ttf");
+    font-weight: 400;
+        font-style: normal;
+}
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("./../utils/Plus_Jakarta_Sans/static/PlusJakartaSans-SemiBold.ttf");
+    font-weight: 500;
+        font-style: normal;
+}
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("./../utils/Plus_Jakarta_Sans/static/PlusJakartaSans-SemiBoldItalic.ttf");
+    font-weight: 500;
+        font-style: italic;
+}
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("./../utils/Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraLight.ttf");
+    font-weight: 200;
+        font-style: normal;
+}
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("./../utils/Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraLightItalic.ttf");
+    font-weight: 200;
+        font-style: italic;
+}
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("./../utils/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf");
+    font-weight: 700;
+        font-style: normal;
+}
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("./../utils/Plus_Jakarta_Sans/static/PlusJakartaSans-BoldItalic.ttf");
+    font-weight: 700;
+        font-style: italic;
+}
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("./../utils/Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraBold.ttf");
+    font-weight: 700;
+        font-style: normal;
+}
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("./../utils/Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraBoldItalic.ttf");
+    font-weight: 700;
+        font-style: italic;
+}
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("./../utils/Plus_Jakarta_Sans/static/PlusJakartaSans-Medium.ttf");
+    font-weight: 400;
+        font-style: normal;
+}
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("./../utils/Plus_Jakarta_Sans/static/PlusJakartaSans-MediumItalic.ttf");
+    font-weight: 400;
+        font-style: italic;
+}
+
+
+*{
+    font-family: "Plus Jakarta Sans";
+}
+
+.inter_normal{
+    font-family: Inter;   
+}
+
+.plus_jakarta_sans_semibold{
+    font-family: "Plus Jakarta Sans";
+}
