@@ -646,7 +646,7 @@ const Hero = () => {
         </div>
         <div className="flex-1 md:min-w-[400px] items-center justify-center flex flex-wrap lg:h-full lg:justify-between gap-3  h-full ">
           {DashboardData.map((data, index) => (
-            <div className="flex min-w-[200px] tablet:min-w-0 items-start justify-evenly flex-col bg-white rounded-lg border h-full lg:h-[48%] box-border border-primary_border py-3 px-2 w-full flex-1 lg:max-w-full HeroDashboard_Details gap-1 ">
+            <div className="flex min-w-[200px] tablet:min-w-[180px] items-start justify-evenly flex-col bg-white rounded-lg border h-full lg:h-[48%] box-border border-primary_border py-3 px-2 w-full flex-1 lg:max-w-full HeroDashboard_Details gap-1 ">
               <div className="flex items-center justify-center w-full">
                 <div className="flex items-center justify-center">
                   <div className="border flex items-center justify-center rounded-full border-primary_border w-10 h-10">
