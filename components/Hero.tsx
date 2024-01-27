@@ -528,105 +528,110 @@ const Hero = () => {
 
 
   return (
-    <div className="w-full p-5 plus_jakarta_sans_semibold">
-      <div className="flex hero_container items-start gap-4 justify-between w-full flex-wrap-reverse  lg:h-[400px] h-full ">
-        <div className="flex-1 bg-white flex items-center justify-between flex-col gap-5 rounded-lg border w-full h-full border-primary_border box-border p-4 md:min-w-[470px]">
-          <div className="flex items-center justify-between w-full">
-            <p className="plus_jakarta_sans_semibold font-semibold text-sm text-[#26282C] md:text-lg">
+    <div className="w-full p-5 xs:p-2 plus_jakarta_sans_semibold">
+      <div className="tablet:block lg:block flex hero_container items-start gap-4 justify-between w-full flex-wrap  h-full">
+        <div className="tablet:mb-1 mb-4  tablet:min-w-[150px] min-w-[400px] special flex-1 xs:p-0 xs:py-4 bg-white flex items-center justify-between flex-col gap-5 rounded-lg border w-full h-full border-primary_border box-border p-4 ">
+          <div className="flex items-center flex-wrap justify-between w-full xs px-2">
+            <p className="plus_jakarta_sans_semibold font-semibold text-sm text-[#26282C] xs:text-xs md:text-lg">
               Sales Trends
             </p>
             <div className="flex items-center justify-center gap-2">
-              <p className="plus_jakarta_sans_semibold font-medium text-xs md:text-sm">
+              <p className="plus_jakarta_sans_semibold font-medium text-xs md:text-sm xs:text-xs whitespace-nowrap">
                 Sort by:
               </p>
               <select className="rounded-full py-[6px] px-[12px] outline-none border border-primary_border text-xs">
-                <option className="plus_jakarta_sans_semibold font-normal text-xs">
+                <option className="xs:text-xs plus_jakarta_sans_semibold font-normal text-xs">
                   Weekly
                 </option>
-                <option className="plus_jakarta_sans_semibold font-normal text-xs">
+                <option className="xs:text-xs plus_jakarta_sans_semibold font-normal text-xs">
                   Monthly
                 </option>
-                <option className="plus_jakarta_sans_semibold font-normal text-xs">
+                <option className="xs:text-xs plus_jakarta_sans_semibold font-normal text-xs">
                   Yearly
                 </option>
               </select>
             </div>
           </div>
           {/* Charts */}
-          <ResponsiveContainer
-            width="95%"
-            height="100%"
-            // aspect={5 / 2}
-            minWidth={100}
-            minHeight="300px"
-          >
-            <BarChart
-              data={data}
-              className="plus_jakarta_sans_semibold text-sm font-semibold text-[#525252]"
+          <div className="overflow-y-scroll custom_scrollbar w-full">
+            <ResponsiveContainer
+              width="100%"
+              height="100%"
+              // hideAxis={[true,false]}
+              // aspect={5 / 2}
+              minWidth="400px"
+              minHeight="300px"
+              className="bg-back p-0"
             >
-              <defs>
-                <linearGradient
-                  id="BarChartsGradient"
-                  x1="0%"
-                  y1="0%"
-                  x2="0%"
-                  y2="100%"
-                >
-                  <stop offset="0%" stopColor="#34CAA5" />
-                  <stop offset="100%" stopColor="rgba(52, 202, 165, 0.00)" />
-                </linearGradient>
-              </defs>
-              <XAxis
-                dataKey="name"
-                tick={{
-                  fill: "#525252",
-                  fontSize: 14,
-                }}
-                stroke=""
-              />{" "}
-              <YAxis
-                // tickFormatter={formatYAxisLabel}
-                tickCount={6}
-                tick={{
-                  fill: "#525252",
-                }}
-                stroke=""
-              />{" "}
-              {/* <Tooltip content={<CustomTooltip />} /> */}
-              <CartesianGrid y={-1000} stroke="#ccc" strokeDasharray="5 9" />
-              <Tooltip
-                formatter={formatTooltipValue}
-                cursor={{ fill: "transparent" }}
-                content={CustomTooltip}
-              />
-              <Bar
-                isAnimationActive={false}
-                activeBar={false}
-                dataKey="uv"
-                fill="url(#BarChartsGradient)"
-                className="transition-all duration-700"
-                // fill="linear-gradient(180deg, #34CAA5 0%, rgba(52, 202, 165, 0.00) 100%);
-                // "
-                // fill="red"
-                barSize={18}
-                radius={[30, 30, 0, 0]}
+              <BarChart
+                data={data}
+                className="plus_jakarta_sans_semibold text-sm font-semibold text-[#525252]"
+                // margin={right:25}}
               >
-                {data.map((entry, index) => (
-                  <Cell
-                    key={`cell-${index}`}
-                    onMouseLeave={handleMouseLeave}
-                    onMouseEnter={() => handleMouseEnter(index)}
-                    className="transition-all duration-700"
-                    fill={
-                      hoveredBar === index
-                        ? "url(#BarChartsGradient"
-                        : "#34CAA51A"
-                    }
-                  />
-                ))}
-              </Bar>
-            </BarChart>
-            {/* <LineChart width={600} height={300} data={data}>
+                <defs>
+                  <linearGradient
+                    id="BarChartsGradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="0%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" stopColor="#34CAA5" />
+                    <stop offset="100%" stopColor="rgba(52, 202, 165, 0.00)" />
+                  </linearGradient>
+                </defs>
+                <XAxis
+                  dataKey="name"
+                  tick={{
+                    fill: "#525252",
+                    // fontSize: 14,
+                  }}
+                  className="xs:text-xs xs:text-[8px]"
+                  stroke=""
+                />{" "}
+                <YAxis
+                  tickCount={6}
+                  tick={{
+                    fill: "#525252",
+                  }}
+                  stroke=""
+                  className="xs:text-[10px] "
+                />{" "}
+                {/* <Tooltip content={<CustomTooltip />} /> */}
+                <CartesianGrid y={-1000} stroke="#ccc" strokeDasharray="5 9" />
+                <Tooltip
+                  formatter={formatTooltipValue}
+                  cursor={{ fill: "transparent" }}
+                  content={CustomTooltip}
+                />
+                <Bar
+                  isAnimationActive={false}
+                  activeBar={false}
+                  dataKey="uv"
+                  fill="url(#BarChartsGradient)"
+                  className="transition-all duration-700 bg-black absolute left-0"
+                  // fill="linear-gradient(180deg, #34CAA5 0%, rgba(52, 202, 165, 0.00) 100%);
+                  // "
+                  // fill="red"
+                  barSize={18}
+                  radius={[30, 30, 0, 0]}
+                >
+                  {data.map((entry, index) => (
+                    <Cell
+                      key={`cell-${index}`}
+                      onMouseLeave={handleMouseLeave}
+                      onMouseEnter={() => handleMouseEnter(index)}
+                      className="transition-all duration-700"
+                      fill={
+                        hoveredBar === index
+                          ? "url(#BarChartsGradient"
+                          : "#34CAA51A"
+                      }
+                    />
+                  ))}
+                </Bar>
+              </BarChart>
+              {/* <LineChart width={600} height={300} data={data}>
             jhvjd
             <CartesianGrid strokeDasharray="" />
             <XAxis dataKey="name" />
@@ -636,11 +641,12 @@ const Hero = () => {
             <Line type="basis" dataKey="pv" stroke="red" />
             <Line type="basis" dataKey="uv" stroke="green" />
           </LineChart> */}
-          </ResponsiveContainer>
+            </ResponsiveContainer>
+          </div>
         </div>
-        <div className="flex-1 min-w-[400px] items-center justify-center basis-[100px] flex flex-wrap lg:h-full lg:justify-between gap-3  ">
+        <div className="flex-1 md:min-w-[400px] items-center justify-center flex flex-wrap lg:h-full lg:justify-between gap-3  h-full ">
           {DashboardData.map((data, index) => (
-            <div className="flex  items-start justify-evenly flex-col bg-white rounded-lg border h-full lg:h-[48%] box-border border-primary_border py-3 px-2 w-full flex-1 lg:max-w-full HeroDashboard_Details gap-1 ">
+            <div className="flex min-w-[200px] tablet:min-w-0 items-start justify-evenly flex-col bg-white rounded-lg border h-full lg:h-[48%] box-border border-primary_border py-3 px-2 w-full flex-1 lg:max-w-full HeroDashboard_Details gap-1 ">
               <div className="flex items-center justify-center w-full">
                 <div className="flex items-center justify-center">
                   <div className="border flex items-center justify-center rounded-full border-primary_border w-10 h-10">
@@ -654,7 +660,7 @@ const Hero = () => {
                 </div>
               </div>
               <div>
-                <p className="plus_jakarta_sans_semibold text-lg text-[#898989]">
+                <p className="plus_jakarta_sans_semibold text-lg text-[#898989] xs:text-sm">
                   {data.name}
                 </p>
               </div>
@@ -669,12 +675,14 @@ const Hero = () => {
                   style={{ color: data.color, background: data.bg }}
                 >
                   {data.svg3}
-                  <p className="plus_jakarta_sans_semibold text-xs font-medium">
+                  <p className="plus_jakarta_sans_semibold text-xs font-medium xs:text-[10px]">
                     23.5%
                   </p>
                 </div>
-                <span className="text-xs">vs.</span>
-                <p className="text-xs text-[#606060] whitespace-nowrap">previous month</p>
+                <span className="text-xs xs:text-[10px]">vs.</span>
+                <p className="text-xs text-[#606060] whitespace-nowrap xs:text-[10px]">
+                  previous month
+                </p>
               </div>
             </div>
           ))}

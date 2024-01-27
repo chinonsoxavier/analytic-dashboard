@@ -16,12 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="w-full h-[100vh]">
+      <body className="w-full h-full">
         <div className="w-full h-full fixed left-0  flex items-start justify-start" >
           <section className="h-full" >
             <Sidebar/>
           </section>
-          <section className="h-full" >
+          <section className="h-full pb-5" >
         {children}
           </section>
         </div>

@@ -82,7 +82,7 @@ const Navbar = () => {
           </svg>
         </div>
       </div>
-      <div className="flex items-center justify-between">
+      <div className=" flex xs:hidden items-center justify-between">
         <div className="flex items-center justify-between rounded-[28px] gap-2 border-primary_border border px-2">
           <div className="w-7 h-7 md:w-8 md:h-8 rounded-full ">
             <Image
