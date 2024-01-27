@@ -529,8 +529,8 @@ const Hero = () => {
 
   return (
     <div className="w-full p-5 xs:p-2 plus_jakarta_sans_semibold">
-      <div className="tablet:block lg:block flex hero_container items-start gap-4 justify-between w-full flex-wrap  h-full">
-        <div className="tablet:mb-1 mb-4  tablet:min-w-[150px] min-w-[400px] special flex-1 xs:p-0 xs:py-4 bg-white flex items-center justify-between flex-col gap-5 rounded-lg border w-full h-full border-primary_border box-border p-4 ">
+      <div className="lg:flex block  items-start gap-4 justify-between w-full flex-wrap  h-full">
+        <div className="tablet:mb-1 mb-4  tablet:min-w-[150px] min-w-[400px] special flex-1 xs:p-0 xs:py-4 bg-white flex items-center justify-between flex-col gap-5 rounded-lg border w-full h-full border-primary_border box-border p-4 max-h-[380px] ">
           <div className="flex items-center flex-wrap justify-between w-full xs px-2">
             <p className="plus_jakarta_sans_semibold font-semibold text-sm text-[#26282C] xs:text-xs md:text-lg">
               Sales Trends
@@ -644,10 +644,11 @@ const Hero = () => {
             </ResponsiveContainer>
           </div>
         </div>
-        <div className="flex-1 md:min-w-[400px] items-center justify-center flex flex-wrap lg:h-full lg:justify-between gap-3  h-full ">
+        {/* <div className="flex-1 md:min-w-[400px] items-center justify-center flex flex-wrap lg:min-h-[400px] lg:justify-between gap-0 bg-black  h-full  "> */}
+        <div className="grid grid-cols-2 items-center justify-center flex-wrap w-full  flex-1 h-[380px] gap-3 laptop:flex laptop:h-full" >
           {DashboardData.map((data, index) => (
-            <div className="flex min-w-[200px] tablet:min-w-[180px] items-start justify-evenly flex-col bg-white rounded-lg border h-full lg:h-[48%] box-border border-primary_border py-3 px-2 w-full flex-1 lg:max-w-full HeroDashboard_Details gap-1 ">
-              <div className="flex items-center justify-center w-full">
+            <div style={{flex:1,flexGrow:1}} className="w-full border border-primary_border rounded-lg px-2 py-2 bg-white h-full" >
+              <div className="flex items-center justify-center w-full p-1 box-border">
                 <div className="flex items-center justify-center">
                   <div className="border flex items-center justify-center rounded-full border-primary_border w-10 h-10">
                     {data.svg}

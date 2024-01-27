@@ -24,7 +24,7 @@ const config: Config = {
       md: "769px",
       
       lmd: { max: "920px" },
-      laptop: { min: "769px", max: "1024px" },
+      laptop: {  max: "1024px" },
       special: { max: "700px" },
       lg: "1024px",
       xl: "1141px",

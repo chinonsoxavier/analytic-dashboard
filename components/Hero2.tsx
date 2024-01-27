@@ -1,12 +1,56 @@
 import React from 'react'
 import navbarUserImage from "../public/images/jordan-2x.webp";
+import navbarUserImage2 from "../public/images/jenny-2x.webp";
+import navbarUserImage3 from "../public/images/scarlett-2x.webp";
+import navbarUserImage4 from "../public/images/christina-2x.webp";
 import Image from 'next/image';
 
 const Hero2 = () => {
 
     const data = [
-        {},{},{},{},{},{},{}
-    ]
+      {
+        name: "Jaydon Vaccaro",
+        price: "120.00",
+        image: navbarUserImage,
+        status: "Paid",
+      },
+      {
+        name: "Marcus Bergson",
+        price: "890.00",
+        image: navbarUserImage2,
+        status: "Paid",
+      },
+      {
+        name: "Corey Schleifer",
+        price: "989.000",
+        image: navbarUserImage3,
+        status: "Refund",
+      },
+      {
+        name: "Cooper Press",
+        price: "100.000",
+        image: navbarUserImage,
+        status: "Refund",
+      },
+      {
+        name: "Phillip Lubin",
+        price: "090.000",
+        image: navbarUserImage4,
+        status: "Paid",
+      },
+      {
+        name: "Jaydon Vaccaro",
+        price: "78.00",
+        image: navbarUserImage2,
+        status: "Refund",
+      },
+      {
+        name: "Corey Schleifer",
+        price: "150.00",
+        image: navbarUserImage3,
+        status: "Paid",
+      },
+    ];
 
   return (
     <div className="w-full p-5 plus_jakarta_sans_semibold ">
@@ -64,13 +108,13 @@ const Hero2 = () => {
                         <div className="flex  items-center justify-center gap-2">
                           <div className="w-8 h-8 rounded-full ">
                             <Image
-                              src={navbarUserImage}
+                              src={item.image}
                               alt="user profile image"
                               className="object-contain w-full h-full"
                             />
                           </div>
                           <p className="text-[#3A3F51] w-full text-base font-medium whitespace-nowrap md:text-sm tablet:text-sm">
-                            Marcus Bergson
+                            {item.name}
                           </p>
                         </div>
                         <div className="flex items-center justify-start">
@@ -80,15 +124,15 @@ const Hero2 = () => {
                         </div>
                         <div className="flex items-center justify-start">
                           <p className="text-[#3A3F51] w-full text-base font-semibold md:text-sm tablet:text-sm">
-                            $60,00.00
+                            ${item.price}
                           </p>
                         </div>
                         <div className="flex items-center justify-start">
-                          <p className="text-[#34CAA5] w-full text-base font-normal md:text-sm tablet:text-sm">
-                            Paid
+                          <p style={{color:item.status==='Paid'?"#34CAA5":"#ED544E"}} className="w-full text-base font-normal md:text-sm tablet:text-sm"  >
+                            {item.status}
                           </p>
                         </div>
-                        <div className="w-[40px] flex items-center justify-center gap-[6px]">
+                        <div className="flex items-center justify-center gap-[6px]">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"

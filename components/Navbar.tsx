@@ -4,7 +4,7 @@ import navbarUserImage from '../public/images/jordan-2x.webp'
 
 const Navbar = () => {
   return (
-    <div className="bg-primary_dark_bg flex items-center justify-evenly w-full py-5 px-2 gap-4 border-b  z-50 border-b-primary_border">
+    <div className="bg-primary_dark_bg flex items-center justify-evenly w-full py-5 px-5 gap-4 border-b  z-50 border-b-primary_border">
       <div className="flex items-start flex-1 justify-start">
         <h2 className="plus_jakarta_sans_semibold text-[#26282C] text-[18px] font-semibold leading-6 md:text-[20px]">
           Dashboard
